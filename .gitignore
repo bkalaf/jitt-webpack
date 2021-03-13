@@ -1,0 +1,9 @@
+yarn-error.log
+node_modules
+out
+dist
+.vscode
+backup
+public/index.html
+init
+
