@@ -3,9 +3,6 @@ import firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/firestore';
 
-import 'jquery';
-import 'foundation-sites';
-
 const firebaseConfig = {
     apiKey: 'AIzaSyAJVfOd4rXlAQ_VlsY8TAGVAwJDCru4ZTI',
     authDomain: 'jitt-c21e3.firebaseapp.com',
@@ -16,9 +13,9 @@ const firebaseConfig = {
     measurementId: 'G-7R1H0E925E',
 };
 
-const app = firebase.initializeApp(firebaseConfig);
+export const app = firebase.initializeApp(firebaseConfig);
 
-const context = React.createContext({
+export const FirebaseContext = React.createContext({
     app,
     currentUser: app.auth().currentUser
 });

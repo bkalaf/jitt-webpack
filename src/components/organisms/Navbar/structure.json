@@ -1,0 +1,144 @@
+{
+    "Navbar": {
+        "Brand": {
+            "Item": {
+                "Block": [
+                    "Span",
+                    "Icon"
+                ]
+            },
+            "Burger": [
+                "Span",
+                "Span",
+                "Span"
+            ]
+        },
+        "Menu": {
+            "Start": {
+                "mainMenu": [{
+                        "Item": {
+                            "~tag": "a",
+                            "@hasDropdown": true,
+                            "Link": {
+                                "~tag": "a",
+                                "~text": "Auctions"
+                            },
+                            "Dropdown": {
+                                "~tag": "div",
+                                "routes": [{
+                                        "Item": {
+                                            "tag": "a",
+                                            "@name": "properties",
+                                            "@route": "/banner/property"
+                                        }
+                                    },
+                                    {
+                                        "Item": {
+                                            "tag": "a",
+                                            "@name": "lots",
+                                            "@route": "/banner/property/lot"
+                                        }
+                                    },
+                                    {
+                                        "Item": {
+                                            "tag": "a",
+                                            "@name": "banners",
+                                            "@route": "/banner"
+                                        }
+                                    },
+                                    {
+                                        "Item": {
+                                            "tag": "a",
+                                            "@name": "purchases",
+                                            "@route": "/banner/property/lot/purchases"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "Item": {
+                            "tag": "a",
+                            "@hasDropdown": true,
+                            "Link": {
+                                "tag": "a",
+                                "label": "Products"
+                            },
+                            "Dropdown": {
+                                "~tag": "div",
+                                "routes": [{
+                                        "Item": {
+                                            "~tag": "a",
+                                            "@name": "Products",
+                                            "@route": "/products"
+                                        }
+                                    },
+                                    {
+                                        "Item": {
+                                            "~tag": "a",
+                                            "@name": "Variants",
+                                            "@route": "/products/details/variants"
+
+                                        }
+                                    },
+                                    {
+                                        "Item": {
+                                            "~tag": "a",
+                                            "@name": "Product Details",
+                                            "@route": "/products/details"
+
+                                        }
+                                    },
+                                    {
+                                        "Item": {
+                                            "~tag": "a",
+                                            "@name": "Items",
+                                            "@fromRoute": [
+                                                "/banner/property/lot/purchase",
+                                                "/products/details/variants"
+                                            ],
+                                            "@route": "/items"
+                                        }
+                                    }{ "Item": {
+
+                                }} 
+                                ]
+                            }
+                        },
+
+                    },
+                    {
+                        "Item": {
+                            "~tag": "a",
+                            "@hasDropdown": true,
+                            "Link": {
+                                "tag": "~a",
+                                "label": "Listings"
+                            },
+                            "Dropdown": {
+                                "routes": [{
+                                    "Item": {
+                                        "~tag": "a",
+                                        "@name": "Marketplaces",
+                                        "@route": '/marketplaces'
+                                    }
+                                },
+                                {
+                                    "Item": {
+                                        "~tag": "a"
+                                    }
+                                }]
+
+                            }
+                        }
+                    }
+                ]
+
+            },
+            "End": {
+
+            }
+        }
+    }
+}

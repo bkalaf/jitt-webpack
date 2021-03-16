@@ -1,0 +1,152 @@
+{
+    "nodes": ["Navbar", {
+            "className": "navbar",
+            "menuIsOpen": {
+                "state": "boolean"
+            },
+            "currentUser": {
+                "state": "object"
+            },
+            "color": {
+                "variable": "navbarColor"
+            },
+            "size": {
+                "variable": "navbarSize"
+            }
+        },
+        [
+            ["Brand", {
+                    "className": "navbar-brand",
+                    "homePageRoute": {
+                        "variable": "homePageRoute"
+                    },
+                    "brandName": {
+                        "variable": "brandname"
+                    },
+                    "brandicon": {
+                        "variable": "brandicon"
+                    },
+                    "routes": {
+                        "variable": "brandRoutes"
+                    }
+                },
+                [
+                    ["Item", {
+                            "tag": "a",
+                            "href": {
+                                "variable": "homePageRoute"
+                            },
+                            "hasDropdown": false,
+                            "className": "navbar-item"
+                        },
+                        [
+                            ["Block", {
+                                    "className": "block",
+                                    "margin": ["r", 2]
+                                },
+                                [
+                                    ["span", {},
+                                        [{
+                                            "variable": "brandname"
+                                        }]
+                                    ],
+                                    ["FontAwesomeIcon", {
+                                            "className": "icon",
+                                            "icon": {
+                                                "variable": "brandicon"
+                                            }
+                                        },
+                                        []
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ],
+                    ["Burger", {
+                            "className": "navbar-burger",
+                            "tag": "div"
+                        },
+                        [
+                            ["span"],
+                            ["span"],
+                            ["span"]
+                        ]
+                    ]
+                ]
+            ],
+            ["Menu", {
+                    "className": "navbar-menu",
+                    "isOpen": {
+                        "variable": "menuIsOpen"
+                    },
+                    "isAnon": {
+                        "derived": "isCurrentUserNull"
+                    },
+                    "currentUser": {
+                        "variable": "currentUser"
+                    },
+                    "userEmail": {
+                        "derived": "getUserEmail"
+                    }
+                },
+                [
+                    ["Start", {
+                            "className": "navbar-start"
+                        },
+                        [
+                            ["Item", {
+                                    "hasDropDown": true,
+                                    "tag": "div",
+                                    "isHoverable": true,
+                                    "className": "navbar-item"
+                                },
+                                [
+                                    ["Link", {
+                                            "className": "navbar-link",
+                                            "tag": "a",
+                                            "onMouseEnter": "function",
+                                            "onMouseLeave": "function"
+                                        },
+                                        [{
+                                            "variable": "columnHeaderName"
+                                        }]
+                                    ],
+                                    ["Dropdown", {
+                                            "className": "navbar-dropdown",
+                                            "a": "div"
+                                        },
+                                        [
+                                            ["Item", {
+                                                    "tag": "a",
+                                                    "className": "navbar-item",
+                                                    "hasDropDown": false,
+                                                    "href": {
+                                                        "variable": "route"
+                                                    }
+                                                },
+                                                [{
+                                                    "variable": "routeLabel"
+                                                }]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            ["Item", {},
+                                []
+                            ],
+                            ["Item", {},
+                                []
+                            ]
+                        ]
+                    ],
+                    ["End", {
+                            "className": "navbar-end"
+                        },
+                        []
+                    ]
+                ]
+            ]
+        ]
+    ]
+}

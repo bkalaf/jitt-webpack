@@ -1,0 +1,25 @@
+
+Todo:
+  ☐ NavbarEnd: Component: +ButtonGroups
+  ☐ NavbarEnd: Component: Notifications Widget 
+  ☐ NavbarEnd: Component: Settings Widget 
+  ☐ EventAggregator: Class: Add
+  ☐ AppRoot: Modals: +LoginModal
+  ☐ AppRoot: Modals: +RegisterModal
+  ☐ AppRoot: Modals: +VerificationModal
+  ☐ AppRoot: Modals: +PasswordResetModal
+  ☐ AppRoot: authStateChanged
+  ☐ UserProfile: Interface: Add
+  ☐ FirebaseContext: field: -currentUser
+  ☐ NavbarMenu: -isAnonymousUser prop
+  ☐ NavbarBrand: fix BrandName & BrandIcon spacing
+  ☐ Button: Extract: useIsFocused
+  ☐ Button: Extract: useIsHovered
+  ☐ Hook: Design: useIsLoading
+  ☐ Hook: Design: useIsActive
+  ☐ Hook: Design: useIsSelected
+  ☐ Navbar: Burger: wire-up button
+  
+
+
+

@@ -6,4 +6,6 @@ dist
 backup
 public/index.html
 init
-
+public
+lib
+yarn.lock
