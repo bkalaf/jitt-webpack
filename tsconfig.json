@@ -9,11 +9,11 @@
       "@enums/*": ["src/components/enums/*"],
       "@templates/*": ["src/components/templates/*"],
       "@hocs/*": ["src/components/functions/*"],
-      "@fp/*": ["src/fp"],
-      "@firebase/*": ["src/fb"],
-      "@monads/*": ["src/monads"],
-      "@core/*": ["src/core"],
-      "@hooks/*": ["src/components/hooks"]
+      "@fp/*": ["src/fp/*"],
+      "@firebase/*": ["src/fb/*"],
+      "@monads/*": ["src/monads/*"],
+      "@core/*": ["src/core/*"],
+      "@hooks/*": ["src/components/hooks/*"]
     },  
   },
   "include": [
